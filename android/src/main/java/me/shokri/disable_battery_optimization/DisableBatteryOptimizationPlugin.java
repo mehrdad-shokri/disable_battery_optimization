@@ -57,7 +57,7 @@ public class DisableBatteryOptimizationPlugin implements FlutterPlugin, MethodCa
     String packageName = mRegistrar.activeContext().getPackageName();
     mPowerManager = (PowerManager) (mRegistrar.activeContext().getSystemService(POWER_SERVICE));
 
-    if(mPowerManager.isIgnoringBatteryOptimizations(packageName)) {
+    if(mPowerManager !=null && mPowerManager.isIgnoringBatteryOptimizations(packageName)) {
       return true;
     } else {
       return false;
