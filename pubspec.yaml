@@ -1,6 +1,6 @@
 name: disable_battery_optimization
 description: Check for application battery optimization status and disable it
-version: 0.1.0
+version: 0.1.1
 author: Mehrdad Shokri
 homepage: https://github.com/mehrdad-shokri/disable_battery_optimization
 
